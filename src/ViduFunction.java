@@ -30,8 +30,11 @@ public class ViduFunction {
             }
             case "/":
             {
-                x= (double) a/b;
-                break;
+                while(b == 0){
+                    System.out.print("Nhập lại b. b khác 0: ");
+                    b = sc.nextInt();
+                }
+                x = (double) a/b;
             }
         }
         return x;
